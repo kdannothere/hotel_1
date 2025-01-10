@@ -9,60 +9,142 @@
   <body>
     <div class="wrapper min-h-[100vh] flex flex-col">
 <header
-        class="header flex flex-col justify-center items-center border-b-gray-100 border-b-2"
-      >
-        <div
-          class="header__menu flex flex-wrap justify-center items-center py-4 px-8"
-        >
-          <a
-            href="/"
-            class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
-            >Home</a
-          >
-          <a
-            href="/hotels.html"
-            class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
-            >Hotels</a
-          >
-          <a
-            href="/hotels-and-casino.html"
-            class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
-            >Hotels &amp; Casino</a
-          >
-          <a
-            href="/contact-us.html"
-            class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
-            >Contact Us</a
-          >
-        </div>
-      </header>      <div>
+  class="header w-full flex md:justify-center items-center border-b-gray-100 border-b-2"
+>
+  <img
+    class="w-20 h-20 flex mx-10 rounded-full"
+    src="/img/logo.jpg"
+    alt="logo of global guesty website"
+  />
+  <div
+    class="header__menu flex flex-wrap justify-center items-center py-4 px-8"
+  >
+    <a
+      href="/"
+      class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
+      >Home</a
+    >
+    <a
+      href="/hotels.html"
+      class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
+      >Hotels</a
+    >
+    <a
+      href="/hotels-and-casino.html"
+      class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
+      >Hotels &amp; Casino</a
+    >
+    <a
+      href="/contact-us.html"
+      class="header__link text-orange-400 text-xl mx-4 my-1 text-nowrap hover:text-red-600"
+      >Contact Us</a
+    >
+  </div>
+</header>
+<div
+  id="cookie-consent"
+  class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 text-center"
+>
+  <p class="mb-4">
+    We use cookies to enhance your experience.
+    <a href="/cookie-policy.html" class="text-blue-500 hover:underline"
+      >Read our Cookie Policy</a
+    >
+    for more information. By continuing to browse this website, you agree to our
+    use of cookies.
+  </p>
+  <button
+    id="accept-cookies"
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  >
+    Accept
+  </button>
+</div>
+<script type="module" src="/js/cookie-consent.js"></script>
+      <div class="grid justify-center">
         <div class="text-center">
           <h1 class="text-3xl mt-10 mb-8 font-bold">Contact Us</h1>
         </div>
-        <div class="flex flex-col items-center">
-          Forms
-        </div>
+        <form action="./" class="w-96 grid grid-cols-1 items-center">
+          <div class="name flex flex-col mb-6">
+            <label for="name">Name</label>
+            <input
+              class="border-2 border-gray-300 px-4 py-1 rounded-sm"
+              tabindex="1"
+              required
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="phone flex flex-col mb-6">
+            <label for="phone">Phone</label>
+            <input
+              class="border-2 border-gray-300 px-4 py-1 rounded-sm"
+              tabindex="2"
+              required
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div class="email flex flex-col mb-6">
+            <label for="email">Email</label>
+            <input
+              class="border-2 border-gray-300 px-4 py-1 rounded-sm"
+              tabindex="3"
+              required
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="message flex flex-col mb-6">
+            <label for="message">Message</label>
+            <textarea
+              class="min-h-28 border-2 border-gray-300 px-4 py-1 rounded-sm"
+              tabindex="4"
+              type="text"
+              rows="5"
+              required
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <button
+            class="w-fit justify-self-center bg-slate-300 px-8 py-2 rounded-sm"
+            tabindex="4"
+          >
+            Send
+          </button>
+        </form>
       </div>
 <footer class="mt-auto">
   <div
     class="flex flex-nowrap justify-center mt-24 px-8 py-4 border-t-gray-100 border-t-2"
   >
-  <span
-    class="mx-4 inline-block text-black"
-    >@2025 BLABLABLA</span
-  >
-    <a class="mx-4 inline-block hover:underline text-gray-500 hover:text-black" href="/privacy-policy"
+    <a
+      class="mx-4 inline-block hover:underline text-gray-500 hover:text-black"
+      href="/privacy-policy.html"
       >Privacy policy</a
     >
-    <a class="mx-4 inline-block hover:underline text-gray-500 hover:text-black" href="/cookie-policy"
+    <a
+      class="mx-4 inline-block hover:underline text-gray-500 hover:text-black"
+      href="/cookie-policy.html"
       >Cookie policy</a
     >
     <a
       class="mx-4 inline-block hover:underline text-gray-500 hover:text-black"
-      href="/terms-and-conditions"
+      href="/terms-and-conditions.html"
       >Terms and conditions</a
     >
+    <span class="mx-4 inline-block text-black">@2025 The Global Gesty</span>
   </div>
-</footer>    </div>
+</footer>
+    </div>
   </body>
 </html>
